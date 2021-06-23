@@ -1,0 +1,21 @@
+body {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 200px 500px 200px;
+  grid-template-rows: 20% 800px auto;
+  grid-template-areas:
+    ". . ."
+    ". calculator ."
+    ". . .";
+}
+
+div#calculator {
+  display: grid;
+  grid-area: "calculator";
+  grid-template-rows: 200px 600px;
+  grid-template-columns: 375px 125px;
+  grid-template-areas:
+    "display display"
+    "nbuttons oButtons";
+}
